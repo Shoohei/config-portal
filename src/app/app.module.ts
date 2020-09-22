@@ -3,8 +3,6 @@ import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-// import { JsonEditorModule } from 'ng2-json-editor';
-// import { NgJsonEditorModule } from 'ang-jsoneditor';
 
 import { AppComponent } from "./app.component";
 import { ConfigServerService } from "./config-server.service";
@@ -17,8 +15,6 @@ import { ConfigFileComponent } from "./config-file/config-file.component";
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    // JsonEditorModule,
-    // NgJsonEditorModule,
     RouterModule.forRoot([
       { path: "", component: InterfacesListComponent },
       { path: "interface/:interface", component: InterfaceComponent }
