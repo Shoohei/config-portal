@@ -1,5 +1,5 @@
 <h1>{{interfaceKey}}</h1>
 <p>
-<app-config-file [interfaceKey]="interfaceKey" [interfaceInfo]="interfaceInfo" [configFile]="'schema'"></app-config-file>
-<app-config-file [interfaceKey]="interfaceKey" [interfaceInfo]="interfaceInfo" [configFile]="'setting'"></app-config-file>
+<app-config-file [interfaceKey]="interfaceKey" [interfaceInfo]="interfaceInfo | async" [configFile]="'schema'"></app-config-file>
+<app-config-file [interfaceKey]="interfaceKey" [interfaceInfo]="interfaceInfo | async" [configFile]="'setting'"></app-config-file>
 </p>

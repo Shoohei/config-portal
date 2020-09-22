@@ -1,8 +1,8 @@
 <div *ngIf="configFile == 'schema'">
 <h2>{{configFile}}</h2>
-
+<p>{{interfaceInfo.config.schema | json}}</p>
 </div>
 <div *ngIf="configFile == 'setting'">
 <h2>{{configFile}}</h2>
-{{interfaceInfo | async | json}}
+<p>{{interfaceInfo.config.settingDev| json}}</p>
 </div>

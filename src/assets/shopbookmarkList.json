@@ -48,7 +48,7 @@
         ]
       }
     },
-    "interface-dev": {
+    "settingDev": {
       "connection": {
         "url": "http://rae.api.bookmark.stg.jp.local/v1/shop/bookmarks",
         "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
@@ -61,7 +61,7 @@
         "sort": 0
       }
     },
-    "interface-stg": {
+    "settingStg": {
       "connection": {
         "url": "http://rae.api.bookmark.stg.jp.local/v1/shop/bookmarks",
         "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
@@ -74,7 +74,7 @@
         "sort": 0
       }
     },
-    "interface-pre": {
+    "setting-pre": {
       "connection": {
         "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
         "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
@@ -87,7 +87,7 @@
         "sort": 0
       }
     },
-    "interface-perf": {
+    "setting-perf": {
       "connection": {
         "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
         "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
@@ -100,7 +100,7 @@
         "sort": 0
       }
     },
-    "interface-prod": {
+    "setting-prod": {
       "connection": {
         "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
         "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",

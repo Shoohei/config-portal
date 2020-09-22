@@ -15,6 +15,7 @@ export class ConfigFileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
