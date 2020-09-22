@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from "@angular/core";
-import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
+// import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
 
 @Component({
   selector: 'app-config-file',

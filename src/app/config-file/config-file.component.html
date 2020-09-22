@@ -4,5 +4,5 @@
 </div>
 <div *ngIf="configFile == 'setting'">
 <h2>{{configFile}}</h2>
-{{interfaceInfo | json}}
+{{interfaceInfo | async | json}}
 </div>
