@@ -1,0 +1,117 @@
+{
+  "structures": [
+    {
+      "name": "schema",
+      "type": "JSON"
+    },
+    {
+      "name": "setting",
+      "byProfile": true,
+      "type": "JSON"
+    }
+  ],
+  "config": {
+    "schema": {
+      "request": {
+        "urlParameters": [
+          {
+            "name": "easyId",
+            "type": "INTEGER",
+            "isRequired": true,
+            "targetName": "easy_id"
+          },
+          {
+            "name": "offset",
+            "type": "INTEGER",
+            "typeAttribute": {
+              "minValue": 0,
+              "maxValue": 50000
+            }
+          },
+          {
+            "name": "hits",
+            "type": "INTEGER",
+            "typeAttribute": {
+              "minValue": 1,
+              "maxValue": 20
+            }
+          },
+          {
+            "name": "sort",
+            "type": "INTEGER",
+            "options": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    "interface-dev": {
+      "connection": {
+        "url": "http://rae.api.bookmark.stg.jp.local/v1/shop/bookmarks",
+        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
+        "proxyPort": "9502"
+      },
+      "urlParameter": {
+        "svid": "212",
+        "offset": 0,
+        "hits": 20,
+        "sort": 0
+      }
+    },
+    "interface-stg": {
+      "connection": {
+        "url": "http://rae.api.bookmark.stg.jp.local/v1/shop/bookmarks",
+        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
+        "proxyPort": "9502"
+      },
+      "urlParameter": {
+        "svid": "212",
+        "offset": 0,
+        "hits": 20,
+        "sort": 0
+      }
+    },
+    "interface-pre": {
+      "connection": {
+        "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
+        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
+        "proxyPort": "9502"
+      },
+      "urlParameter": {
+        "svid": "212",
+        "offset": 0,
+        "hits": 20,
+        "sort": 0
+      }
+    },
+    "interface-perf": {
+      "connection": {
+        "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
+        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
+        "proxyPort": "9502"
+      },
+      "urlParameter": {
+        "svid": "212",
+        "offset": 0,
+        "hits": 20,
+        "sort": 0
+      }
+    },
+    "interface-prod": {
+      "connection": {
+        "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
+        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
+        "proxyPort": "9502"
+      },
+      "urlParameter": {
+        "svid": "212",
+        "offset": 0,
+        "hits": 20,
+        "sort": 0
+      }
+    }
+  }
+}

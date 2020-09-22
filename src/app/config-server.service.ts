@@ -11,4 +11,8 @@ export class ConfigServerService {
   getInterfaces() {
     return this.http.get('/assets/interfaces.json');
   }
+
+  getInterface(interfaceKey: string) {
+    return this.http.get('/assets/' + interfaceKey + '.json');
+  }
 }
