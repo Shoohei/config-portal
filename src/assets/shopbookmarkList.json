@@ -50,9 +50,9 @@
     },
     "settingDev": {
       "connection": {
-        "url": "http://rae.api.bookmark.stg.jp.local/v1/shop/bookmarks",
-        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
-        "proxyPort": "9502"
+        "url": "http://bookmark.stg/v1/shop/bookmarks",
+        "proxyHost": "dev-proxy.jp",
+        "proxyPort": "9500"
       },
       "urlParameter": {
         "svid": "212",
@@ -63,9 +63,9 @@
     },
     "settingStg": {
       "connection": {
-        "url": "http://rae.api.bookmark.stg.jp.local/v1/shop/bookmarks",
-        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
-        "proxyPort": "9502"
+        "url": "http://bookmark.stg/v1/shop/bookmarks",
+        "proxyHost": "dev-proxy.jp",
+        "proxyPort": "9500"
       },
       "urlParameter": {
         "svid": "212",
@@ -74,11 +74,9 @@
         "sort": 0
       }
     },
-    "setting-pre": {
+    "settingPre": {
       "connection": {
-        "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
-        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
-        "proxyPort": "9502"
+        "url": "http://bookmark.prod/v1/shop/bookmarks"
       },
       "urlParameter": {
         "svid": "212",
@@ -87,11 +85,9 @@
         "sort": 0
       }
     },
-    "setting-perf": {
+    "settingPerf": {
       "connection": {
-        "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
-        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
-        "proxyPort": "9502"
+        "url": "http://bookmark.prod/v1/shop/bookmarks"
       },
       "urlParameter": {
         "svid": "212",
@@ -100,11 +96,9 @@
         "sort": 0
       }
     },
-    "setting-prod": {
+    "settingProd": {
       "connection": {
-        "url": "http://rae.api.bookmark.prod.jp.local/v1/shop/bookmarks",
-        "proxyHost": "stb-dev-proxy.db.rakuten.co.jp",
-        "proxyPort": "9502"
+        "url": "http://bookmark.prod/v1/shop/bookmarks"
       },
       "urlParameter": {
         "svid": "212",
