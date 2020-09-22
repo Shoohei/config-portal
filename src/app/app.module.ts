@@ -8,7 +8,6 @@ import { AppComponent } from "./app.component";
 import { ConfigServerService } from "./config-server.service";
 import { InterfacesListComponent } from "./interfaces-list/interfaces-list.component";
 import { InterfaceComponent } from './interface/interface.component';
-import { ConfigFileComponent } from './config-file/config-file.component';
 import { ConfigFieldComponent } from './config-field/config-field.component';
 import { NgJsonEditorModule } from 'ang-jsoneditor';
 
