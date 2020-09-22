@@ -1,0 +1,7 @@
+<h1>List of interfaces</h1>
+
+<div *ngFor="let interface of interfacesList | async">
+  <a [title]="interface" [routerLink]="['/interface', interface]">
+			{{ interface }}
+	</a>
+</div>

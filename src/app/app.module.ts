@@ -1,15 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { ConfigServerService } from './config-server.service';
+import { AppComponent } from "./app.component";
+import { ConfigServerService } from "./config-server.service";
+import { InterfacesListComponent } from "./interfaces-list/interfaces-list.component";
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ],
+  imports: [BrowserModule, HttpClientModule, FormsModule,
+  RouterModule.forRoot([
+      { path: "", component: InterfacesListComponent }
+    ])],
+  declarations: [AppComponent, InterfacesListComponent],
+  bootstrap: [AppComponent],
   providers: [ConfigServerService]
 })
-export class AppModule { }
+export class AppModule {}
