@@ -10,9 +10,11 @@ import { InterfacesListComponent } from "./interfaces-list/interfaces-list.compo
 import { InterfaceComponent } from './interface/interface.component';
 import { ConfigFileComponent } from './config-file/config-file.component';
 import { ConfigFieldComponent } from './config-field/config-field.component';
+import { NgJsonEditorModule } from 'ang-jsoneditor';
+
 
 @NgModule({
-  imports: [BrowserModule, HttpClientModule, FormsModule,
+  imports: [BrowserModule, HttpClientModule, FormsModule, NgJsonEditorModule,
   RouterModule.forRoot([
       { path: "", component: InterfacesListComponent },
       { path: "interface/:interface", component: InterfaceComponent }

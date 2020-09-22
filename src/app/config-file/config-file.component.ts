@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from "@angular/core";
-import { ConfigServerService } from '../config-server.service';
 
 @Component({
   selector: 'app-config-file',

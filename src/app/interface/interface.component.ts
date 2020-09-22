@@ -19,7 +19,6 @@ export class InterfaceComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       this.interfaceKey = params.get("interface");
       this.interfaceInfo = this.configServerService.getInterface(this.interfaceKey);
-      console.log(this.interfaceInfo);
     });
   }
 }

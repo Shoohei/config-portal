@@ -1,8 +1,8 @@
 <div *ngIf="configFile == 'schema'">
 <h2>{{configFile}}</h2>
-
+<json-editor [options]="options" [data]="interfaceInfo"></json-editor>
 </div>
 <div *ngIf="configFile == 'setting'">
 <h2>{{configFile}}</h2>
-
+{{interfaceInfo | json}}
 </div>
